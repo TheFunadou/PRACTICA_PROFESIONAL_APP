@@ -1,0 +1,121 @@
+
+#root{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+section{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+#login{
+    background-color: #851140;
+    width:20%;
+    height: 100%;
+    padding: 2%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#login p{
+    color: #fff;
+    font-weight: bold;
+    text-align: left;
+}
+
+#login p:first-child{
+    font-size: xx-large;
+}
+
+#login p:nth-child(2){
+    margin-top: 20%;
+    margin-bottom: 20%;
+    font-size: x-large;
+}
+
+#login a{
+    margin-top: 1em;
+    color: #ffff;
+    font-weight: bold;
+    transition: 0.5s ease;
+}
+
+#login a:hover{
+    transform: scale(1.1);
+}
+
+#login form{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#login form input{
+    width: 100%;
+    padding: 4%;
+    background: none;
+    border: none;
+    color: #ffff;
+    margin-bottom: 10%;
+    border-bottom: solid #fff 1.5px;
+    font-weight: bold;
+    font-size: large;
+}
+
+#login form input:focus{
+    outline: none;
+}
+
+#login form input::placeholder{
+    color: #ffff;
+}
+
+#login form button{
+    margin-top: 25%;
+    width: 100%;
+    padding: 4%;
+    border-radius: 1em;
+    background-color: #E2BC51;
+    color: #851140;
+    border: none;
+    font-weight: bold;
+    font-size: large;
+    transition: 0.5s ease;
+}
+
+#login form button:hover{
+    transform: scale(1.1);
+}
+
+#background{
+    background-color: #ffff;
+    width:85%;
+    height: 100%;
+    background-image: url("https://scontent.fmtt1-2.fna.fbcdn.net/v/t1.6435-9/109499560_3438017559564058_6718873758005977817_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeENn6Y83eNMvmmg4NFiHYaFFetnW_6yTisV62db_rJOK1jCguMx1E61wDRbMARS0QOSVhGp_BQfaYW0j5_iHtTL&_nc_ohc=95eyQFR0jhkQ7kNvgGdSTkR&_nc_zt=23&_nc_ht=scontent.fmtt1-2.fna&_nc_gid=Av97yt0cpbXZ7zOXYqRlvmT&oh=00_AYA6mSnJ4voDOqsalQjLSJMbyX2w-DINHFbVe2ZtP8e4FQ&oe=67B72C43");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo negro con 50% de opacidad */
+    background-blend-mode: overlay;
+}
+
+#background div{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#background div figure{
+    height: 100%;
+}
+
+#background div figure img{
+    width: 100%;
+    height: 100%;
+}
