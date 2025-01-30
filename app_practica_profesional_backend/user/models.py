@@ -11,7 +11,9 @@ class UserNotes(models.Model):
 # Contribuyente models
 class Contribuyente(models.Model):
     rfc = models.CharField(max_length=13, unique=True)
-    nombre = models.CharField(max_length=25)
+    nombre = models.CharField(max_length=50)
+    apellido_paterno = models.CharField(max_length=50, default='N/A')
+    apellido_materno = models.CharField(max_length=50, default='N/A')
     fecha_registro = models.DateTimeField(auto_now_add=True)
     correo = models.EmailField()
 

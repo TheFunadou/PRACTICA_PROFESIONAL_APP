@@ -17,7 +17,8 @@ from pago_predial import serializer as s
 @authentication_classes([TokenAuthentication])
 @permission_classes([IsAuthenticated,IsContador])
 def load_dashboard(request):
-   debt = Adeudo.objects.all().order_by('-id')[:5]
+    # #
+   debt = Adeudo.objects.all().filter(estatus = 'PAGADO').order_by('-id')[:5]
    user_notes = UserNotes.objects.filter(user = request.user)
    discount_dash = DescuentoAdeudo.order_by('-fecha')[:5]
    return Response({debt,user_notes,discount_dash},status=status.HTTP_200_OK)
